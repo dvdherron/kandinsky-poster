@@ -263,7 +263,7 @@ footer span:nth-child(6) {
 @media  screen and (min-width: 800px) {
   main {
     display: grid;
-    grid-template-columns: 5vh 40px 20vw 5vw 2fr 10vw min-content 20px 5vh ;
+    grid-template-columns: 5vw 40px 20vw 5vw 2fr 10vw min-content 20px 5vw ;
     grid-template-rows: 5vh 40px max-content 125px max-content 5vh max-content 6vh min-content 5vh 1fr 40px 5vh;
     transform: rotate(-5deg);
   }
@@ -372,6 +372,7 @@ footer {
   }
   main {
     grid-template-columns: 5vw 40px 20vw 5vw 2fr 3fr min-content 20px 5vw ;
+    grid-template-rows: 5vw 40px max-content 125px max-content 5vh max-content 6vh min-content 5vh 1fr 40px 5vw;
  }
  @media  screen and (min-width: 1200px) {
    h1 {
