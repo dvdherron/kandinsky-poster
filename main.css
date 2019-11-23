@@ -62,7 +62,6 @@ body {
   text-transform: uppercase;
   font-size: calc(1rem + .75vw);
   --Inter-wght: 600;
-  max-width: 1200px;
 }
 
 /* A elements that don't have a class get default styles */
@@ -364,7 +363,7 @@ footer {
 
 @media  screen and (min-width: 1000px) {
   h1 {
-    font-size: calc(5.5em + 1.5vw);
+    font-size: calc(5.5em + 1vw);
     letter-spacing: -0.002em;
   }
   
@@ -372,6 +371,11 @@ footer {
     grid-column: 4;
   }
   main {
-    grid-template-columns: 5vh 40px 20vw 5vw 2fr 3fr min-content 20px 5vh ;
+    grid-template-columns: 5vw 40px 20vw 5vw 2fr 3fr min-content 20px 5vw ;
+ }
+ @media  screen and (min-width: 1200px) {
+   h1 {
+     font-size: calc(6em + 1vw);
+   }
  }
 }
