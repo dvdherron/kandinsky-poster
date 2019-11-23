@@ -364,7 +364,8 @@ footer {
 
 @media  screen and (min-width: 1000px) {
   h1 {
-    font-size: 5.75em;
+    font-size: calc(5.5em + 1.5vw);
+    letter-spacing: -0.002em;
   }
   
   .birth--wrapper {
