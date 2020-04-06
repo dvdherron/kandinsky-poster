@@ -1,9 +1,7 @@
 @font-face {
-  font-family: 'Inter';
-  src: url('assets/Inter.var.woff2?v=3.11') format('woff2');
+  font-family: "Inter";
+  src: url("assets/Inter.var.woff2?v=3.11") format("woff2");
 }
-
-
 
 :root {
   --page-background-color: #f9e9bf;
@@ -55,12 +53,12 @@ html {
 
 /* Set core body defaults */
 body {
-  font-family: 'Inter','Segoe UI', Arial, Helvetica, sans-serif;
+  font-family: "Inter", "Segoe UI", Arial, Helvetica, sans-serif;
   min-height: 100vh;
   line-height: 1.5;
   overflow-x: hidden;
   text-transform: uppercase;
-  font-size: calc(1rem + .75vw);
+  font-size: calc(1rem + 0.75vw);
   --Inter-wght: 600;
 }
 
@@ -78,9 +76,9 @@ img {
 main {
   margin: 2rem;
 }
- 
+
 .portrait--box {
-  height:  33vw;
+  height: 33vw;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: minmax(33vw, 250px);
@@ -124,7 +122,7 @@ h1 {
 .birth--wrapper {
   display: block;
   margin-left: 0.75rem;
-  margin-top: -0.50rem;
+  margin-top: -0.5rem;
 }
 
 .age {
@@ -137,7 +135,7 @@ h1 {
 
 .birth--wrapper > span:nth-of-type(2) {
   color: var(--bhaus-Red);
-  --Inter-wght: 819; 
+  --Inter-wght: 819;
   display: block;
   margin-top: -1.75em;
   letter-spacing: 0.056em;
@@ -202,7 +200,7 @@ h3 span:nth-of-type(2) {
 
 footer {
   display: grid;
-  grid-template-columns: 1fr  2fr ;
+  grid-template-columns: 1fr 2fr;
   grid-template-rows: repeat(4, 2rem);
   border: 2px solid black;
   font-size: 0.8rem;
@@ -246,24 +244,39 @@ footer span:nth-child(6) {
   grid-row: 4;
 }
 
+a {
+  text-decoration: none;
+  padding: 0 1rem 0 0;
+}
 
+a:hover {
+  text-decoration: underline;
+}
 
-@media  screen and (min-width: 400px) {
+a:active {
+  color: black;
+}
+
+a:visited {
+  color: hsl(204, 100%, 25%);
+}
+
+@media screen and (min-width: 400px) {
   h1 {
     font-size: calc(2.25em + 3.5vw);
   }
 }
 
-@media  screen and (min-width: 500px) {
+@media screen and (min-width: 500px) {
   h1 {
     font-size: calc(2.25em + 4.5vw);
   }
 }
 
-@media  screen and (min-width: 800px) {
+@media screen and (min-width: 800px) {
   main {
     display: grid;
-    grid-template-columns: 5vw 40px 20vw 5vw 2fr 10vw min-content 20px 5vw ;
+    grid-template-columns: 5vw 40px 20vw 5vw 2fr 10vw min-content 20px 5vw;
     grid-template-rows: 5vh 40px max-content 125px max-content 5vh max-content 6vh min-content 5vh 1fr 40px 5vh;
     transform: rotate(-5deg);
   }
@@ -274,7 +287,7 @@ footer span:nth-child(6) {
     grid-template-columns: 40px 1fr;
     grid-template-rows: minmax(25vw, 300px);
     height: auto;
-    }
+  }
 
   .portrait-bar {
     height: 100%;
@@ -293,7 +306,6 @@ footer span:nth-child(6) {
     line-height: 1.1em;
     font-size: 6.5em;
     font-size: calc(3.5em + 4vw);
-    
   }
 
   .description--event {
@@ -353,30 +365,30 @@ footer span:nth-child(6) {
     font-size: 0.821em;
   }
 
-footer {
+  footer {
     grid-row: 11;
     grid-column: 7 / 8;
     margin: 0;
     grid-template-columns: 1fr max-content;
   }
-}   
+}
 
-@media  screen and (min-width: 1000px) {
+@media screen and (min-width: 1000px) {
   h1 {
     font-size: calc(5.5em + 1vw);
     letter-spacing: -0.002em;
   }
-  
+
   .birth--wrapper {
     grid-column: 4;
   }
   main {
-    grid-template-columns: 5vw 40px 20vw 5vw 2fr 3fr min-content 20px 5vw ;
+    grid-template-columns: 5vw 40px 20vw 5vw 2fr 3fr min-content 20px 5vw;
     grid-template-rows: 5vw 40px max-content 125px max-content 5vh max-content 6vh min-content 5vh 1fr 40px 5vw;
- }
- @media  screen and (min-width: 1200px) {
-   h1 {
-     font-size: calc(6em + 1vw);
-   }
- }
+  }
+  @media screen and (min-width: 1200px) {
+    h1 {
+      font-size: calc(6em + 1vw);
+    }
+  }
 }
