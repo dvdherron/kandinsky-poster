@@ -1,6 +1,19 @@
+/* @font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url("assets/Inter-roman.var.woff2?v=3.13") format("woff2");
+} */
+
 @font-face {
-  font-family: "Inter";
-  src: url("assets/Inter.var.woff2?v=3.11") format("woff2");
+  font-family: "Inter var";
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: optional;
+  font-named-instance: "Regular";
+  src: url("assets/Inter-roman.var.woff2?v=3.13") format("woff2");
 }
 
 :root {
@@ -53,7 +66,7 @@ html {
 
 /* Set core body defaults */
 body {
-  font-family: "Inter", "Segoe UI", Arial, Helvetica, sans-serif;
+  font-family: "Inter var", "Segoe UI", Arial, Helvetica, sans-serif;
   min-height: 100vh;
   line-height: 1.5;
   overflow-x: hidden;
