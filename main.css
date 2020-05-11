@@ -1,6 +1,20 @@
+/* @font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url("assets/Inter-roman.var.woff2?v=3.13") format("woff2");
+} */
+
 @font-face {
   font-family: "Inter";
-  src: url("assets/Inter.var.woff2?v=3.11") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  font-named-instance: "Regular";
+  src: url("./assets/Inter-roman.var.woff2") format("woff2 supports variations"),
+    url("./assets/Inter-roman.var.woff2") format("woff2-variations");
 }
 
 :root {
